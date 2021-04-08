@@ -177,7 +177,7 @@ void VSlamFilter::captureNewFrame(cv::Mat newFrame) {
 	old_frame = frame.clone();
     originalImg = newFrame.clone();
     drawedImg = newFrame.clone();
-    cvtColor( newFrame, frame, CV_BGR2GRAY );
+    cvtColor( newFrame, frame, cv::COLOR_BGR2GRAY );
 
 }
 
